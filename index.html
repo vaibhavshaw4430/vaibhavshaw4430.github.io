@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta  name="viewport" content="width=device-width, initial-scale = 1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<!-- <a href="index.html"><img src="images/logo.png"></a> -->
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times"
+				onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+	</section>
+	<section>
+		<div class="text-box">
+			<h1>Vaibhav Shaw</h1>
+
+			<div class="roundedimage">
+				<img src="images/dp.png" width="200" height="250">
+			</div><hr>
+			<p>Hi! I am Vaibhav Shaw currently pursuing Computer Science degree from Future Institute Of Engineering and Management<br>Born and brought up in Kolkata. Keywords synonym with me would be disciplined, sincere and contagious.<br>Though my day is filled with codes and tasks but my night always ends with Netflix and chill.<br>Can have unlimited conversation about Cricket<br></p><hr>
+			<!-- <hr> -->
+			<a href="https://drive.google.com/file/d/1Mg2mGFJyzDv0X4SIQiWGzUP7ri2omDlZ/view?usp=sharing" class="hero-btn">Visit My Resume to know more</a><!-- <hr> -->
+		</div>
+	</section>
+	<section class="course">
+		<h1>Skills</h1>
+		<p>Top Skills learned during B.Tech</p>
+		<div class="row">
+			<div class="course-col">
+				<h3>Web Development</h3>
+				<p>I try and work with HTML, CSS and Javascript</p>
+			</div>
+			<div class="course-col">
+				<h3>Software Development</h3>
+				<p>I know Java as well as C. I know a bit on Python programming too.</p>
+			</div>
+			<div class="course-col">
+				<h3>Database</h3>
+				<p>I try and solve complex SQL queries. I know Oracle SQL.</p>
+			</div>
+		</div>
+	</section>
+	<section class="cta">
+		<h1>Want to reach out to me?</h1>
+		<a href="contact.html" class="hero-btn">
+			CONTACT ME
+		</a>
+	</section>
+	<section class="footer">
+		<p>© Design By Vaibhav</p>
+	</section>
+	<script type="text/javascript">
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+</script>
+</body>
+</html>

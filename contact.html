@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta  name="viewport" content="width=device-width, initial-scale = 1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+	<section class="header" style="background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url(images/dp2.png);">
+		<nav>
+			<!-- <a href="index.html"><img src="images/logo.png"></a> -->
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times"
+				onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html" >HOME</a></li>
+					<li><a href="about.html" >ABOUT</a></li>
+					<li><a href="" >CONTACT</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+
+	<section class="text">
+		<h1 style="font-size: 55px;">SAY HELLO !</h1>
+		<br><br>
+		<form action="contact.html" onsubmit = "return fun();">
+		Name : <input type="text" name="name" id="in" placeholder="Type Your Name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		EMAIL : <input type="email" name="mail" id="in" placeholder="Type Your Email"><br><br>
+		MESSAGE : <textarea cols="70" rows="8" placeholder="Type Your MESSAGE"></textarea><br><br>
+		<button value="Submit" class="hero-btn" >SUBMIT</button>
+	</form>
+	</section>
+	<section class="cta" style="background: transparent;">
+		<h1 style="font-size: 55px; font-weight: 600;">Check Out My Profiles</h1>
+		<a href="https://github.com/vaibhavshaw4430"><img src="images/github.png" height="50" style="background: transparent;"></a>&nbsp;&nbsp;
+		<a href="https://www.linkedin.com/in/vaibhav-shaw-599388195/"><img src="images/linked.png" height="50" style="background: transparent;"></a><br><br>
+		<a href="https://www.facebook.com/vaibhav.shaw/"><img src="images/fb.png" height="50" style="background: transparent;"></a>&nbsp;&nbsp;
+		<a href="https://www.instagram.com/vaibhav_shaw20/"><img src="images/insta.jpg" height="50"style="background: transparent;"></a>&nbsp;&nbsp;
+		<a href="https://www.quora.com/profile/Vaibhav-Shaw-6"><img src="images/quora.png" height="50"style="background: transparent;"></a>
+	</section>
+	<section class="footer" style="color: white;">
+		<p>© Design By Vaibhav</p>
+	</section>
+</section>
+<script>
+	function fun()
+	{
+		alert("Message Was Conveyed");
+	}
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+</script>
+</body>
+</html>
